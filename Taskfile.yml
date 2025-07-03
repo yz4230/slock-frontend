@@ -1,0 +1,10 @@
+# https://taskfile.dev
+version: '3'
+tasks:
+  updateSubmodules:
+    cmd: git submodule update --init --recursive
+  generateOpenApi:
+    cmds:
+      - task: updateSubmodules
+      - cd slock-openapi && npm ci && npm run build
+      - bun openapi-typescript slock-openapi/tsp-output/schema/openapi.yaml -o ./src/lib/api/v1.d.ts
