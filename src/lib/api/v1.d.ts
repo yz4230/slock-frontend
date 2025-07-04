@@ -146,6 +146,7 @@ export interface components {
         } & components["schemas"]["WithTimestamp"];
         RegisterRequest: {
             name: string;
+            displayName: string;
             email: string;
             password: string;
         };
@@ -156,6 +157,7 @@ export interface components {
         User: {
             id: string;
             name: string;
+            displayName: string;
             email: string;
         } & components["schemas"]["WithTimestamp"];
         WithTimestamp: {
