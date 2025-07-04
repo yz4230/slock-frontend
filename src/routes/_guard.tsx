@@ -1,6 +1,6 @@
-import { $api } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
-import { Navigate, Outlet, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Navigate, Outlet } from "@tanstack/react-router";
+import { $api } from "@/lib/api";
 
 export const Route = createFileRoute("/_guard")({
 	component: RouteComponent,

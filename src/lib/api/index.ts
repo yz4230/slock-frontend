@@ -1,6 +1,6 @@
-import { userStore } from "@/store/user";
 import createFetchClient from "openapi-fetch";
 import createClient from "openapi-react-query";
+import { userStore } from "@/store/user";
 import config from "../config";
 import type { paths } from "./v1";
 

@@ -1,5 +1,5 @@
-import type { components } from "@/lib/api/v1";
 import { Store } from "@tanstack/react-store";
+import type { components } from "@/lib/api/v1";
 
 type User = components["schemas"]["User"];
 

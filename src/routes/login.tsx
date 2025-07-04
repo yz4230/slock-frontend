@@ -1,11 +1,11 @@
+import { useForm } from "@tanstack/react-form";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { LoaderCircleIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { $api } from "@/lib/api";
 import { userStore } from "@/store/user";
-import { useForm } from "@tanstack/react-form";
-import { Link, createFileRoute } from "@tanstack/react-router";
-import { LoaderCircleIcon } from "lucide-react";
 
 export const Route = createFileRoute("/login")({
 	component: RouteComponent,
